@@ -1,0 +1,15 @@
+import random
+
+# Generate a random number between 1 and 100
+num = random.randint(1, 100)
+
+# Get user's guess and convert to integer
+guess = int(input('Guess the number between 1 and 100: '))
+
+# Compare guess with the number
+if guess > num:
+    print('Too high')
+elif guess < num:
+    print('Too low')
+else:
+    print('Correct! You guessed it.')
