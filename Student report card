@@ -32,14 +32,3 @@ print(f"Total   : {total}")
 print(f"Average : {average}")
 print(f"Grade   : {grade}")
 
-# Save to file
-filename = f"{name}_report_card.txt"
-with open(filename, "w") as file:
-    file.write("----- Student Report Card -----\n")
-    file.write(f"Name    : {name}\n")
-    file.write(f"Marks   : {marks}\n")
-    file.write(f"Total   : {total}\n")
-    file.write(f"Average : {average}\n")
-    file.write(f"Grade   : {grade}\n")
-
-print(f"\nReport card saved as '{filename}' ")
