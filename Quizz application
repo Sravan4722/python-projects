@@ -1,0 +1,33 @@
+quiz = [
+    {
+        "question": "What is the capital of India?",
+        "options": ["A. Mumbai", "B. New Delhi", "C. Hyderabad", "D. Kolkata"],
+        "answer": "B"
+    },
+    {
+        "question": "Which language is used to write Python?",
+        "options": ["A. English", "B. Assembly", "C. oops", "D. Python"],
+        "answer": "A"
+    },
+    {
+        "question": "Which of these is a Python data type?",
+        "options": ["A. banana", "B. tuple", "C. loop", "D. stringify"],
+        "answer": "B"
+    }
+]
+#target Score
+score=0
+# Ask questions 
+for q in quiz:
+    print('\n' + q['question'])
+    for option in q['options']:
+        print(option)
+
+    user_answer = input("Enter your answer (A/B/C/D): ").strip().upper()
+    if user_answer == q['answer']:
+            print('correct')
+            score+=1
+    else:
+            print(f"wrong! the correct answer is{q['answer']}.")
+print(f"\n You got {score} out of is {len(quiz)} correct!")
+   
