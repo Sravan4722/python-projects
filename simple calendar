@@ -1,0 +1,7 @@
+import calendar
+#guess user input
+year=int(input('Enter year: '))
+month=int(input('Enter month:'))
+#display calendar
+print('\n there you got a calendar')
+print(calendar.month(year,month))
